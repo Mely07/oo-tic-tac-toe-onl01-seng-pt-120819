@@ -35,8 +35,7 @@ class TicTacToe
     end
   end
   
-  def valid_move?(position) #here position syn for index
-    
+  def valid_move?(position) #here position acts as synonum for index
     if (position <= 8 && position >= 0) && !(position_taken?(position)) 
       return true
     else 
@@ -122,7 +121,7 @@ class TicTacToe
   end
 
   def play 
-    until over? == true
+    until over? 
       turn
     end
     
@@ -135,11 +134,5 @@ class TicTacToe
   
 end
 
-# puts game.instance_variable_get(:@board)
-# puts game.over?
-# game.turn
-# puts game.over?
-# game.turn
-# puts game.over?
-# puts game.instance_variable_get(:@board)
+
         
