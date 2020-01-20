@@ -35,7 +35,7 @@ class TicTacToe
     end
   end
   
-  def valid_move?(position) #here position acts as synonum for index
+  def valid_move?(position) #here position acts as synonym for index
     if (position <= 8 && position >= 0) && !(position_taken?(position)) 
       return true
     else 
