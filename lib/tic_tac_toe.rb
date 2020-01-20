@@ -123,7 +123,7 @@ class TicTacToe
 
   def play 
     until over? == true
-      turn
+      if draw?turn
     end
     
     if over? && winner
