@@ -43,7 +43,6 @@ class TicTacToe
     end
   end
   
-
   def turn
     puts "Enter position from 1 - 9" 
     position = gets.chomp
@@ -78,16 +77,15 @@ class TicTacToe
     end
   end
   
-  def won? #value at WIN_COMBINATIONS are all the same, win combo in board
+  def won? #won if values at WIN_COMBINATIONS are all the same
     WIN_COMBINATIONS.each {|combo| 
       if (@board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]) && (@board[combo[0]] != " ") 
         return combo
       end
     }
-    return false #outside of loop 
+    return false #outside of loop!!!
   end
  
-
   def full?
     if !(@board.include?(" "))
       return true
