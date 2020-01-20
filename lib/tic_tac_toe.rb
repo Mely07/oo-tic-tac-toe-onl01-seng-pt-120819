@@ -126,11 +126,10 @@ class TicTacToe
       turn
     end
     
-    if draw?
-      puts "Cat's Game!"
-      elsif over? && winner
+    if over? && winner
       puts "Congratulations #{winner}!"
-      
+    elsif draw?
+      puts "Cat's Game!"
     end
   end
   
